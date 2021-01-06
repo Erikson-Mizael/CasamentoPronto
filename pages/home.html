@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de casamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/script/script.js"></script>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(250, 224, 191);
+        }
+        .lista-titulo{
+            text-align: center;
+            color: rgba(32, 115, 240, 0.76);
+            font-family: cursive;
+            font-size: xx-large;
+        }
+        .lista-titulo-2{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.76);
+            font-family: cursive;
+        }
+        .sub{
+            text-align: center;
+            font-family: cursive;
+            font-size: large;
+            color: brown;
+        }
+    </style>
+    <div class="container">
+        <h2 class='lista-titulo'>Lista de presente</h2>
+        <p class='sub'>Raquel <span class="glyphicon glyphicon-heart"></span> Erikson</p>
+        <hr>
+        <h3 class='lista-titulo-2'>Querido convidado seja bem-vindo a nossa lista de presentes.
+             Pensamos em tudo com muito carinho para que você se sinta à vontade para nos 
+             presentear com o que sentir vontade.”
+             <br>
+            “Agradecemos sua contribuição nesse momento tão especial e nós vemos no grande dia!”</h3>
+            <hr>
+        <ul class='nav nav-tabs'>
+            <li class='active'> <a href='#cozinha'> Cozinha</a> </li>
+            <li> <a href='#sala'> Sala </a> </li>
+            <li> <a href='#quarto'> Quarto </a> </li>
+            <li> <a href='#mais'> Mais </a> </li>
+            
+        </ul>
+
+        <div class="tab-content">
+            <div id="cozinha" class='tab-pane fade in active'>
+                <br>
+                <ul id='lista-cozinha' class="list-group">
+                </ul>
+            </div>
+            <div id="sala" class='tab-pane fade'>
+                <br>
+                <ul id='lista-sala' class="list-group"></ul>
+            </div>
+            <div id="quarto" class='tab-pane fade'>
+                <br>
+                <ul id='lista-quarto' class="list-group"></ul>
+            </div>
+            <div id="mais" class='tab-pane fade'>
+                <ul class='nav nav-tabs'>
+                    <li class='active'> <a href='#lavanderia'> Lavanderia</a> </li>
+                    <li> <a href='#banheiro'> Banheiro </a> </li>
+                    <br>
+                    <div class="tab-content">
+                        <br>
+                        <div id="lavanderia" class='tab-pane fade in active'>
+                            <br>
+                            <ul id='lista-lavanderia' class="list-group">
+                            </ul>
+                        </div>
+                        <div id="banheiro" class='tab-pane fade'>
+                            <br>
+                            <ul id='lista-banheiro' class="list-group">
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <p class="act"><b>Atual </b> : <span></span> </p>
+        <p class="prev"><b>Anterior </b> : <span></span> </p>
+    </div>
+</body>
+</html>
